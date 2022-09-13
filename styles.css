@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/sunny.jpg);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+}
+body h1 {
+  position: absolute;
+  top: 34px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.container {
+  width: 450px;
+  background-color: rgba(240, 248, 255, 0.6);
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.searchBox {
+  display: flex;
+  gap: 10px;
+}
+
+.searchBox .btn {
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #582233;
+  font-size: 1.2rem;
+}
+
+.inputBox {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  outline: none;
+  color: #582233;
+  font-size: 1.2rem;
+  height: 50px;
+  border-radius: 10px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.inputBox:focus,
+.btn:focus {
+  background-color: rgba(255, 255, 255);
+}
+
+.weather-body {
+  display: none;
+  width: 100%;
+  line-height: 2rem;
+  color: #582233;
+  background-color: rgba(240, 248, 255, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  height: 50vh;
+}
+
+.weather-body .location-detail {
+  font-weight: bold;
+}
+.weather-status {
+  padding: 20px;
+}
+
+.temp {
+  font-size: 50pt;
+  font-weight: 700;
+  margin: 20px 0;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.min-max,
+.weather {
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    width: 95%;
+  }
+}
